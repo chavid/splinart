@@ -19,6 +19,9 @@ jobs:
         with:
           pixi-version: v0.40.2
           cache: true
+      - name: Set up Python ${{ matrix.py-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.py-version }}
       - run: pixi run test
-
 
