@@ -19,7 +19,7 @@ doc = { cmd = "cd doc; make html" }
 
 [dependencies]
 cxx-compiler = "1.6.0.*"
-cmake = "3.27.9.*"
+cmake = ">=3.31.5,<4"
 opencv = "4.8.1.*"
 cli11 = "2.3.2.*"
 xtensor = "0.24.7.*"
@@ -33,3 +33,4 @@ pydata-sphinx-theme = "0.14.4.*"
 doxygen = "1.9.8.*"
 breathe = "4.35.0.*"
 myst-parser = "2.0.0.*"
+cppcheck = ">=2.15.0,<3"
