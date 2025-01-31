@@ -1,11 +1,11 @@
-{% set version = environ.get('VERSION', '') %}
+{% set version = '0.0.1' %}
 
 package:
-  name: splinart-cpp
+  name: splinart
   version: {{ version }}
 
 source:
-  git_url: https://github.com/gouarin/splinart-cpp.git
+  git_url: https://github.com/chavid/splinart.git
   git_rev: v{{ version }}
 
 build:
