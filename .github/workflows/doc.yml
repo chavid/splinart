@@ -3,6 +3,10 @@ name: "Documentation generation"
 
 on: pull_request
 
+permissions:
+  contents: read
+  pull-requests: write
+
 jobs:
   # Build job
   build:
