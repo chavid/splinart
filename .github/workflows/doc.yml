@@ -3,9 +3,14 @@ name: "Documentation generation"
 
 on: pull_request
 
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
 permissions:
   contents: read
-  pull-requests: write
+  pages: write
+  id-token: write
 
 jobs:
   # Build job
